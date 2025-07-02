@@ -34,13 +34,13 @@ jobs:
           echo "DB_CONNECTION=mysql" >> .env
           echo "DB_HOST=db" >> .env
           echo "DB_PORT=3306" >> .env
-          echo "DB_DATABASE=your_db_name" >> .env
-          echo "DB_USERNAME=your_db_user" >> .env
-          echo "DB_PASSWORD=${{ secrets.DB_PASSWORD }}" >> .env
+          echo "DB_DATABASE=laravel" >> .env
+          echo "DB_USERNAME=root" >> .env
+          echo "DB_PASSWORD=root" >> .env
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./back-end
+          context: .
           push: true
           tags: yomiyus/project-backend:latest
