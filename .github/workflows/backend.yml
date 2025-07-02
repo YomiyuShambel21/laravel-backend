@@ -44,3 +44,4 @@ jobs:
           context: .
           push: true
           tags: yomiyus/project-backend:latest
+          # Build arguments
