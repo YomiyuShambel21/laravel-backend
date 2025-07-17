@@ -12,6 +12,6 @@
    CLM System.
 </h2>
 <hr>
-<p>This is a headless backend API</p>
+<p>This is a headles backend API</p>
 </body>
 </html>
